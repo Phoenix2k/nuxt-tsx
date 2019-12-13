@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "lib": ["esnext", "esnext.asynciterable", "dom"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "paths": {
+      "@/*": ["./*"],
+      "~/*": ["./*"]
+    },
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2018",
+    "types": ["@types/node", "@nuxt/types"]
+  },
+  "exclude": ["node_modules"]
+}

@@ -1,5 +1,5 @@
 export default {
-  buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/stylelint-module'],
+  buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/stylelint-module', '@nuxt/typescript-build'],
   head: {
     link: [
       {
@@ -28,5 +28,16 @@ export default {
     color: '#0C0'
   },
   mode: 'universal',
-  modules: ['@nuxtjs/axios', '@nuxtjs/pwa', '@nuxtjs/dotenv']
+  modules: ['@nuxtjs/axios', '@nuxtjs/pwa', '@nuxtjs/dotenv'],
+  typescript: {
+    typeCheck: {
+      eslint: true,
+      eslintOptions: {
+        cache: false,
+        extensions: ['js', 'json', 'ts', 'tsx', 'vue'],
+        fix: true,
+        outputReport: true
+      }
+    }
+  }
 };

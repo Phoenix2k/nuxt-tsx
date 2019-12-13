@@ -5,15 +5,13 @@ module.exports = {
   },
   extends: [
     '@nuxtjs',
-    'prettier',
-    'prettier/vue',
+    '@nuxtjs/eslint-config-typescript',
     'plugin:json/recommended',
+    'plugin:nuxt/recommended',
     'plugin:prettier/recommended',
-    'plugin:nuxt/recommended'
+    'prettier',
+    'prettier/vue'
   ],
-  parserOptions: {
-    parser: 'babel-eslint'
-  },
   plugins: ['prettier'],
   root: true,
   rules: {}
