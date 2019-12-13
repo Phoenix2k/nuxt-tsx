@@ -45,6 +45,7 @@
     "dev": "nuxt",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.json,.vue --ignore-path .gitignore .",
+    "lint:fix": "eslint --ext .js,.json,.vue --fix --ignore-path .gitignore .",
     "start": "nuxt start",
     "test": "jest"
   },
