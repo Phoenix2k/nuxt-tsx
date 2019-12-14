@@ -29,6 +29,12 @@ export default {
   },
   mode: 'universal',
   modules: ['@nuxtjs/axios', '@nuxtjs/pwa', '@nuxtjs/dotenv'],
+  stylelint: {
+    configFile: './stylelint.config.js',
+    emitError: true,
+    files: ['assets/**/*.{s?(a|c)ss,less,stylus}', '{components,layouts,pages}/**/*.vue'],
+    fix: true
+  },
   typescript: {
     typeCheck: {
       eslint: true,

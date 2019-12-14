@@ -26,6 +26,7 @@
     "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
     "stylelint": "^12.0.0",
+    "stylelint-order": "^3.1.1",
     "vue-jest": "^4.0.0-0"
   },
   "engines": {
