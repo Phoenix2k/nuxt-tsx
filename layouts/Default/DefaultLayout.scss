@@ -1,10 +1,3 @@
-<template>
-  <div>
-    <nuxt />
-  </div>
-</template>
-
-<style>
 html {
   box-sizing: border-box;
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
@@ -24,32 +17,35 @@ html {
   margin: 0;
 }
 
-.button--green {
+.button {
   border: 1px solid #3b8070;
   border-radius: 4px;
   color: #3b8070;
   display: inline-block;
-  padding: 10px 30px;
+  padding: 0.6rem 1.8rem;
   text-decoration: none;
+
+  + .button {
+    margin-left: 1rem;
+  }
 }
 
-.button--green:hover {
-  background-color: #3b8070;
-  color: #fff;
+.button--green {
+  border-color: #3b8070;
+  color: #3b8070;
+
+  &:hover {
+    background-color: #3b8070;
+    color: #fff;
+  }
 }
 
 .button--grey {
-  border: 1px solid #35495e;
-  border-radius: 4px;
+  border-color: #35495e;
   color: #35495e;
-  display: inline-block;
-  margin-left: 15px;
-  padding: 10px 30px;
-  text-decoration: none;
-}
 
-.button--grey:hover {
-  background-color: #35495e;
-  color: #fff;
+  &:hover {
+    background-color: #35495e;
+    color: #fff;
+  }
 }
-</style>

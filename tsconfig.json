@@ -15,7 +15,7 @@
     "sourceMap": true,
     "strict": true,
     "target": "es2018",
-    "types": ["@types/node", "@nuxt/types", "./types"]
+    "types": ["@types/node", "@nuxt/types"]
   },
   "exclude": ["dist", "node_modules", "static"]
 }

@@ -32,7 +32,7 @@ export default {
   stylelint: {
     configFile: './stylelint.config.js',
     emitError: true,
-    files: ['assets/**/*.{s?(a|c)ss,less,stylus}', '{components,layouts,pages}/**/*.vue'],
+    files: ['assets/**/*.{s?(a|c)ss,less,stylus}', '{components,layouts,pages}/**/*.scss'],
     fix: true
   },
   typescript: {
