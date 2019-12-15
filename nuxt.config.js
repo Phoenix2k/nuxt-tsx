@@ -1,4 +1,20 @@
 export default {
+  build: {
+    extend(config, ctx) {
+      // Run ESLint on save
+      if (ctx.isDev && ctx.isClient) {
+        config.module.rules.push({
+          enforce: 'pre',
+          exclude: /(node_modules)/,
+          loader: 'eslint-loader',
+          options: {
+            fix: true
+          },
+          test: /\.(js|json|ts|tsx|vue)$/
+        });
+      }
+    }
+  },
   buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/stylelint-module', '@nuxt/typescript-build'],
   head: {
     link: [
