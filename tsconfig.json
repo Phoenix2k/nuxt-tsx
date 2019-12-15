@@ -3,6 +3,7 @@
     "allowJs": true,
     "baseUrl": ".",
     "esModuleInterop": true,
+    "jsx": "preserve",
     "lib": ["esnext", "esnext.asynciterable", "dom"],
     "module": "esnext",
     "moduleResolution": "node",
@@ -14,7 +15,7 @@
     "sourceMap": true,
     "strict": true,
     "target": "es2018",
-    "types": ["@types/node", "@nuxt/types"]
+    "types": ["@types/node", "@nuxt/types", "./types"]
   },
-  "exclude": ["node_modules"]
+  "exclude": ["dist", "node_modules", "static"]
 }
