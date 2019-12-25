@@ -46,7 +46,7 @@ export default {
   mode: 'universal',
   modules: ['@nuxtjs/axios', '@nuxtjs/pwa', '@nuxtjs/dotenv'],
   stylelint: {
-    configFile: './stylelint.config.js',
+    configFile: './.stylelintrc.json',
     emitError: true,
     files: ['assets/**/*.{s?(a|c)ss,less,stylus}', '{components,layouts,pages}/**/*.scss'],
     fix: true
