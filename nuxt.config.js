@@ -48,7 +48,7 @@ export default {
   stylelint: {
     configFile: './.stylelintrc.json',
     emitError: true,
-    files: ['assets/**/*.{s?(a|c)ss,less,stylus}', '{components,layouts,pages}/**/*.scss'],
+    files: ['{assets,components,layouts,pages}/**/*.scss'],
     fix: true
   },
   typescript: {
@@ -56,7 +56,7 @@ export default {
       eslint: true,
       eslintOptions: {
         cache: false,
-        extensions: ['js', 'json', 'ts', 'tsx', 'vue'],
+        extensions: ['js', 'json', 'ts', 'tsx'],
         fix: true,
         outputReport: true
       }
