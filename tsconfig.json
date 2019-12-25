@@ -3,19 +3,21 @@
     "allowJs": true,
     "baseUrl": ".",
     "esModuleInterop": true,
+    "experimentalDecorators": false,
     "jsx": "preserve",
-    "lib": ["esnext", "esnext.asynciterable", "dom"],
+    "lib": ["dom", "esnext", "esnext.asynciterable"],
     "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,
     "paths": {
-      "@/*": ["./*"],
-      "~/*": ["./*"]
+      "@/*": ["./*"]
     },
+    "removeComments": true,
     "sourceMap": true,
     "strict": true,
     "target": "es2018",
-    "types": ["@types/node", "@nuxt/types"]
+    "types": ["@nuxt/types", "jest", "node"]
   },
-  "exclude": ["dist", "node_modules", "static"]
+  "exclude": ["coverage", "dist", "node_modules", "static"],
+  "extension": [".ts", ".tsx"]
 }

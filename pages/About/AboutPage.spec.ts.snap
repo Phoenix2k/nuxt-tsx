@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About page renders correctly 1`] = `
+<div
+  class="container"
+>
+  <div>
+    <h1
+      class="title"
+    >
+      About
+    </h1>
+    <h2
+      class="subtitle"
+    >
+      This is the about page.
+    </h2>
+    <div
+      class="links"
+    >
+      <a
+        class="button button--grey"
+      >
+        Home page
+      </a>
+    </div>
+  </div>
+</div>
+`;

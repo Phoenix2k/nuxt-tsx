@@ -1,36 +1,43 @@
 {
   "author": "Niko Pettersen <niko.pettersen@newthings.co> (https://www.newthings.co)",
   "dependencies": {
-    "@nuxtjs/axios": "^5.8.0",
+    "@nuxtjs/axios": "^5.9.0",
     "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/pwa": "^3.0.0-0",
-    "nuxt": "^2.10.2"
+    "nuxt": "^2.11.0"
   },
   "description": "Nuxt.js build with TypeScript and TSX support",
   "devDependencies": {
-    "@nuxt/typescript-build": "^0.5.1",
+    "@nuxt/typescript-build": "^0.5.3",
     "@nuxtjs/eslint-config": "^2.0.0",
     "@nuxtjs/eslint-config-typescript": "^1.0.0",
     "@nuxtjs/eslint-module": "^1.1.0",
     "@nuxtjs/stylelint-module": "^3.1.1",
+    "@types/jest": "^24.0.24",
+    "@vue/babel-preset-app": "^4.1.1",
     "@vue/composition-api": "^0.3.4",
     "@vue/test-utils": "^1.0.0-beta.27",
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
+    "babel-plugin-istanbul": "^6.0.0",
     "babel-preset-vca-jsx": "^0.3.4",
-    "eslint": "^6.7.2",
-    "eslint-config-prettier": "^6.7.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.8.0",
     "eslint-plugin-json": "^2.0.1",
     "eslint-plugin-nuxt": ">=0.5.0",
-    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-prettier": "^3.1.2",
     "husky": "^3.1.0",
     "jest": "^24.9.0",
+    "jest-serializer-vue": "^2.0.2",
+    "jsdom": "^15.2.1",
+    "jsdom-global": "^3.0.2",
     "lint-staged": "^9.5.0",
     "node-sass": "^4.13.0",
     "prettier": "^1.19.1",
     "sass-loader": "^8.0.0",
-    "stylelint": "^12.0.0",
+    "stylelint": "^12.0.1",
     "stylelint-order": "^3.1.1",
+    "ts-jest": "^24.2.0",
     "vue-jest": "^4.0.0-0"
   },
   "engines": {
@@ -43,7 +50,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,json,vue}": "npm run lint"
+    "*.{js,json,ts,tsx}": "npm run lint"
   },
   "name": "nuxt-tsx",
   "private": true,
@@ -51,10 +58,12 @@
     "build": "nuxt build",
     "dev": "nuxt",
     "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.json,.ts,.vue --ignore-path .gitignore .",
-    "lint:fix": "eslint --ext .js,.json,.ts,.vue --fix --ignore-path .gitignore .",
+    "lint": "eslint --ext .js,.json,.ts,.tsx --ignore-path .gitignore .",
+    "lint:fix": "eslint --ext .js,.json,.ts,.tsx --fix --ignore-path .gitignore .",
     "start": "nuxt start",
-    "test": "jest"
+    "test": "npm run test:unit",
+    "test:unit": "jest",
+    "test:update": "npm run test:unit -- -u"
   },
   "version": "1.0.0"
 }

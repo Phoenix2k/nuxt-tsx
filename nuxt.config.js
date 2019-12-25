@@ -44,7 +44,7 @@ export default {
     color: '#0C0'
   },
   mode: 'universal',
-  modules: ['@nuxtjs/axios', '@nuxtjs/pwa', '@nuxtjs/dotenv'],
+  modules: ['@nuxtjs/axios', '@nuxtjs/dotenv', '@nuxtjs/pwa'],
   stylelint: {
     configFile: './.stylelintrc.json',
     emitError: true,
