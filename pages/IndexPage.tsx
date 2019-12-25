@@ -1,9 +1,8 @@
-import { VNode } from 'vue';
-import * as tsx from 'vue-tsx-support';
-import Logo from '~/components/Logo';
+import Vue, { VNode } from 'vue';
+import Logo from '@/components/Logo';
 import './IndexPage.scss';
 
-const IndexPage = tsx.componentFactory.create({
+export default Vue.extend({
   components: {
     Logo
   },
@@ -30,5 +29,3 @@ const IndexPage = tsx.componentFactory.create({
     );
   }
 });
-
-export default IndexPage;

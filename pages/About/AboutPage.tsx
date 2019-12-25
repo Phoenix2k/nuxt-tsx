@@ -1,7 +1,6 @@
-import { VNode } from 'vue';
-import * as tsx from 'vue-tsx-support';
+import Vue, { VNode } from 'vue';
 
-const AboutPage = tsx.componentFactory.create({
+export default Vue.extend({
   render(): VNode {
     return (
       <div class="container">
@@ -9,7 +8,7 @@ const AboutPage = tsx.componentFactory.create({
           <h1 class="title">About</h1>
           <h2 class="subtitle">This is the about page.</h2>
           <div class="links">
-            <nuxt-link class="button--grey" to="/">
+            <nuxt-link class="button button--grey" to="/">
               Home page
             </nuxt-link>
           </div>
@@ -18,5 +17,3 @@ const AboutPage = tsx.componentFactory.create({
     );
   }
 });
-
-export default AboutPage;

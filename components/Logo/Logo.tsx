@@ -1,8 +1,7 @@
-import { VNode } from 'vue';
-import * as tsx from 'vue-tsx-support';
+import Vue, { VNode } from 'vue';
 import './Logo.scss';
 
-const Logo = tsx.componentFactory.create({
+export default Vue.extend({
   render(): VNode {
     return (
       <svg
@@ -31,5 +30,3 @@ const Logo = tsx.componentFactory.create({
     );
   }
 });
-
-export default Logo;
