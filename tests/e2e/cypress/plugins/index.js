@@ -1,13 +1,18 @@
+const cypressWebpackPreprocessor = require('./preprocessor');
 /**
- * Plugins
+ * Cypress plugins
  *
+ * This function is called when a project is opened or re-opened.
+ *
+ * @param {string} on Hooks into various events Cypress emits.
+ * @param {string} _config Cypress config.
  * @link https://on.cypress.io/plugins-guide
  */
-
-// This function is called when a project is opened or re-opened (e.g. due to
-// the project's config changing)
-
-module.exports = (_on, _config) => {
-  // `on` is used to hook into various events Cypress emits
-  // `config` is the resolved Cypress config
+module.exports = (on, _config) => {
+  /**
+   * Load preprocessor
+   *
+   * Adds support for additional features such as TypeScript.
+   */
+  on('file:preprocessor', cypressWebpackPreprocessor);
 };

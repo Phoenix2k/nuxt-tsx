@@ -8,6 +8,7 @@
   },
   "description": "Nuxt.js build with TypeScript and TSX support",
   "devDependencies": {
+    "@cypress/webpack-preprocessor": "^4.1.1",
     "@nuxt/typescript-build": "^0.5.4",
     "@nuxtjs/eslint-config": "^2.0.0",
     "@nuxtjs/eslint-config-typescript": "^1.0.0",

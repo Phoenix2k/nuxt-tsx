@@ -11,7 +11,9 @@ export default Vue.extend({
       <div class="container">
         <div>
           <Logo />
-          <h1 class="title">nuxt-tsx</h1>
+          <h1 class="title" itemprop="title">
+            nuxt-tsx
+          </h1>
           <h2 class="subtitle">Nuxt.js build with TypeScript and TSX support</h2>
           <div class="links">
             <nuxt-link class="button button--grey" to="/about">

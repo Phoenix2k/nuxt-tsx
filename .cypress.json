@@ -4,6 +4,6 @@
   "integrationFolder": "tests/e2e/cypress/integration",
   "pluginsFile": "tests/e2e/cypress/plugins/index.js",
   "screenshotsFolder": "tests/e2e/cypress/screenshots",
-  "supportFile": "tests/e2e/cypress/support/index.js",
+  "supportFile": "tests/e2e/cypress/support/index.ts",
   "videosFolder": "tests/e2e/cypress/videos"
 }

@@ -33,6 +33,7 @@ exports[`Index page renders correctly 1`] = `
     </svg>
     <h1
       class="title"
+      itemprop="title"
     >
       nuxt-tsx
     </h1>
