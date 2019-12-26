@@ -1,7 +1,7 @@
 /// <reference types="jest" />
 
 import { mount, RouterLinkStub } from '@vue/test-utils';
-import AboutPage from './AboutPage';
+import IndexPage from '.';
 
 const options = {
   stubs: {
@@ -9,9 +9,9 @@ const options = {
   }
 };
 
-const wrapper = mount(AboutPage, options);
+const wrapper = mount(IndexPage, options);
 
-describe('About page', () => {
+describe('Index page', () => {
   test('is a Vue instance', () => {
     expect(wrapper.isVueInstance()).toBeTruthy();
   });

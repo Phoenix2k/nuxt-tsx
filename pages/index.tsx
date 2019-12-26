@@ -1,6 +1,6 @@
 import Vue, { VNode } from 'vue';
-import Logo from '@/components/Logo';
-import './IndexPage.scss';
+import Logo from '@/components/Logo/Logo';
+import './index.scss';
 
 export default Vue.extend({
   components: {
