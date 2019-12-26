@@ -6,7 +6,7 @@
     "experimentalDecorators": false,
     "jsx": "preserve",
     "lib": ["dom", "esnext", "esnext.asynciterable"],
-    "module": "esnext",
+    "module": "commonjs",
     "moduleResolution": "node",
     "noEmit": true,
     "paths": {
@@ -16,7 +16,7 @@
     "sourceMap": true,
     "strict": true,
     "target": "es2018",
-    "types": ["@nuxt/types", "node", "types"]
+    "types": ["@nuxt/types", "node"]
   },
   "exclude": ["dist", "node_modules", "static", "tests/coverage", "tests/e2e"],
   "extension": [".ts", ".tsx"]
