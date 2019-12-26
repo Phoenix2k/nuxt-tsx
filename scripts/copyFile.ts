@@ -15,7 +15,6 @@ const copyFile = (source: string, destination: string): void => {
   const destinationFile = path.join(__dirname, destination);
   fs.copyFile(sourceFile, destinationFile, (error) => {
     if (error) throw error;
-    else console.log('✅ Environment file created\n');
   });
 };
 

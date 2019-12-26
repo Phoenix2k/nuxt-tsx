@@ -12,4 +12,5 @@ const exampleFile = '.env.example';
 
 if (!fs.existsSync(basePath + envFile)) {
   copyFile(basePath + exampleFile, basePath + envFile);
+  console.log('✅ Environment file created\n');
 }
