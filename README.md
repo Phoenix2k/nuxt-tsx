@@ -1,6 +1,6 @@
-# nuxt-tsx
+# Nuxt TSX
 
-> Nuxt.js build with TypeScript and TSX support
+![Nuxt.js build with TypeScript and TSX support][screenshot]
 
 ## Build
 * [Nuxt.js][nuxt]
@@ -85,4 +85,5 @@ For detailed explanation on how things work, check out [Nuxt.js docs][nuxt]. To 
 [nuxt-ts]: https://typescript.nuxtjs.org/
 [prettier]: https://prettier.io/
 [sass-lang]: https://sass-lang.com/
+[screenshot]: static/screenshot.png
 [stylelint]: https://stylelint.io/
