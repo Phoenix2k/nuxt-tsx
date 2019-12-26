@@ -17,6 +17,7 @@ tests/e2e/cypress/videos/*.mp4
 !.gitkeep
 !.prettierrc.json
 !.stylelintrc.json
+!.vuepress
 
 # Nuxt generate
 dist
