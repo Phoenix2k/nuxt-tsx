@@ -2,10 +2,12 @@
 
 ![Nuxt.js build with TypeScript and TSX support][screenshot]
 
+For detailed explanation on how things work, check out [Nuxt.js docs][nuxt-js]. To learn more about the TypeScript build, visit [Nuxt TypeScript][nuxt-ts].
+
 ## Build
-* [Nuxt.js][nuxt]
+* [Nuxt.js][nuxt-js]
 * [Cypress][cypress]
-* [ESLint][eslint] with [TypeScript support][eslint-ts]
+* [ESLint][eslint]
 * [Jest][jest]
 * [Prettier][prettier]
 * [SCSS][sass-lang]
@@ -71,19 +73,47 @@ $ npm run test:update
 ```
 
 ## Links
-For detailed explanation on how things work, check out [Nuxt.js docs][nuxt]. To learn more about the TypeScript build, visit [Nuxt TypeScript][nuxt-ts].
+* [Awesome Nuxt][awesome-nuxt]
+* [Babel documentation][babel]
+* [Cypress recipes][cypress-recipes] + [TypeScript support][cypress-ts]
+* [EditorConfig documentation][editor-config]
+* [Eslint documentation][eslint] + [TypeScript support][eslint-ts]
+* [Git documentation][git]
+* [Jest documentation][jest] + [TypeScript support][jest-ts]
+* [JSConfig documentation][jsconfig]
+* [Nuxt.js documentation][nuxt-js] + [TypeScript support][nuxt-ts]
+* [Nuxt environment variables][nuxt-env]
+* [Prettier documentation][prettier]
+* [Sass documentation][sass-lang]
+* [Stylelint developer guide][stylelint-docs]
+* [TypeScript documentation][typescript]
+* [Vue documentation][vue-js]
+* [Vue TypeScript documentation][vue-ts]
 
 ## License
 [![MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
 
+[awesome-nuxt]: https://github.com/nuxt-community/awesome-nuxt
+[babel]: https://babeljs.io/
+[cypress-recipes]: https://github.com/cypress-io/cypress-example-recipes
+[cypress-ts]: https://docs.cypress.io/guides/tooling/typescript-support.html
 [cypress]: https://www.cypress.io/
+[editor-config]: https://editorconfig.org/
 [eslint-ts]: https://typescript.nuxtjs.org/guide/lint.html
 [eslint]: https://eslint.org/
+[git]: https://git-scm.com/
+[jest-ts]: https://kulshekhar.github.io/ts-jest/
 [jest]: https://jestjs.io/
+[jsconfig]: https://code.visualstudio.com/docs/languages/jsconfig
 [node]: https://nodejs.org/
-[nuxt]: https://nuxtjs.org/
+[nuxt-env]: https://nuxtjs.org/api/configuration-env/
+[nuxt-js]: https://nuxtjs.org/
 [nuxt-ts]: https://typescript.nuxtjs.org/
 [prettier]: https://prettier.io/
 [sass-lang]: https://sass-lang.com/
 [screenshot]: static/screenshot.png
+[stylelint-docs]: https://stylelint.io/developer-guide
 [stylelint]: https://stylelint.io/
+[typescript]: https://www.typescriptlang.org/
+[vue-js]: https://vuejs.org/
+[vue-ts]: https://vuejs.org/v2/guide/typescript.html
