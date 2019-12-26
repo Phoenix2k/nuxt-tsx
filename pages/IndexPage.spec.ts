@@ -1,3 +1,5 @@
+/// <reference types="jest" />
+
 import { mount, RouterLinkStub } from '@vue/test-utils';
 import IndexPage from './IndexPage';
 

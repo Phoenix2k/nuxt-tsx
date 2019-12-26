@@ -1,3 +1,5 @@
+/// <reference types="jest" />
+
 import { mount } from '@vue/test-utils';
 import Default from './Default';
 
