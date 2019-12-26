@@ -58,6 +58,7 @@
   "lint-staged": {
     "*.{js,json,ts,tsx}": "npm run lint"
   },
+  "license": "MIT",
   "name": "nuxt-tsx",
   "private": true,
   "scripts": {
