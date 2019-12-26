@@ -1,7 +1,7 @@
 const { defaults } = require('jest-config');
 
 module.exports = {
-  collectCoverage: true,
+  collectCoverage: false,
   collectCoverageFrom: ['**/*.{ts,tsx}'],
   coverageDirectory: 'tests/coverage',
   globals: {

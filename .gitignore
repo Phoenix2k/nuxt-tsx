@@ -13,6 +13,7 @@ tests/e2e/cypress/videos/*.mp4
 !.cypress.json
 !.env.example
 !.eslintrc.json
+!.github
 !.gitignore
 !.gitkeep
 !.prettierrc.json

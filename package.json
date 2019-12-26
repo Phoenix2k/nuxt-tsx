@@ -64,6 +64,7 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
+    "cypress:ci": "CYPRESS_CI=true cypress run --config-file .cypress.json --config video=false",
     "cypress:run": "cypress run --config-file .cypress.json",
     "dev": "nuxt",
     "docs:dev": "vuepress dev docs",
@@ -73,10 +74,11 @@
     "lint": "eslint --ext .js,.json,.ts,.tsx --ignore-path .gitignore .",
     "postinstall": "ts-node scripts/postinstall.ts",
     "start": "nuxt start",
+    "test:ci": "jest && nuxt generate && start-test start 3000 cypress:ci",
     "test:e2e": "nuxt generate && start-test start 3000 cypress:run",
-    "test:unit": "jest",
-    "test": "npm run test:unit && npm run test:e2e",
-    "test:update": "npm run test:unit -- -u"
+    "test:unit": "jest --coverage",
+    "test:update": "npm run test:unit -- -u",
+    "test": "npm run test:unit && npm run test:e2e"
   },
   "version": "1.0.0"
 }

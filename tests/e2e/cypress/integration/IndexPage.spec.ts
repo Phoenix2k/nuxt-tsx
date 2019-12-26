@@ -8,6 +8,8 @@ describe('Index page', () => {
     cy.visit('/');
     cy.contains('h1', 'nuxt-tsx');
     cy.itemProp('title').should('be.visible');
-    cy.screenshot('screenshot');
+    if (!Cypress.env('CI')) {
+      cy.screenshot('screenshot');
+    }
   });
 });
