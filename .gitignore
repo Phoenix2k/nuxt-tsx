@@ -11,6 +11,7 @@ tests/e2e/cypress/videos/*.mp4
 # Exceptions
 !.babelrc.json
 !.cypress.json
+!.env.example
 !.eslintrc.json
 !.gitignore
 !.gitkeep

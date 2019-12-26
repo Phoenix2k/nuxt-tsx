@@ -8,7 +8,7 @@
   },
   "description": "Nuxt.js build with TypeScript and TSX support",
   "devDependencies": {
-    "@nuxt/typescript-build": "^0.5.3",
+    "@nuxt/typescript-build": "^0.5.4",
     "@nuxtjs/eslint-config": "^2.0.0",
     "@nuxtjs/eslint-config-typescript": "^1.0.0",
     "@nuxtjs/eslint-module": "^1.1.0",
@@ -42,6 +42,7 @@
     "stylelint": "^12.0.1",
     "stylelint-order": "^3.1.1",
     "ts-jest": "^24.2.0",
+    "ts-node": "^8.5.4",
     "vue-jest": "^4.0.0-0"
   },
   "engines": {
@@ -63,12 +64,13 @@
     "cypress:run": "cypress run --config-file .cypress.json",
     "dev": "nuxt",
     "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.json,.ts,.tsx --ignore-path .gitignore .",
     "lint:fix": "eslint --ext .js,.json,.ts,.tsx --fix --ignore-path .gitignore .",
+    "lint": "eslint --ext .js,.json,.ts,.tsx --ignore-path .gitignore .",
+    "postinstall": "ts-node scripts/postinstall.ts",
     "start": "nuxt start",
-    "test": "npm run test:unit && npm run test:e2e",
     "test:e2e": "nuxt generate && start-test start 3000 cypress:run",
     "test:unit": "jest",
+    "test": "npm run test:unit && npm run test:e2e",
     "test:update": "npm run test:unit -- -u"
   },
   "version": "1.0.0"
