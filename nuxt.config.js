@@ -10,7 +10,7 @@ export default {
           options: {
             fix: true
           },
-          test: /\.(js|json|ts|tsx|vue)$/
+          test: /\.(js|json|ts|tsx)$/
         });
       }
     }

@@ -18,6 +18,6 @@
     "target": "es2018",
     "types": ["@nuxt/types", "jest", "node"]
   },
-  "exclude": ["coverage", "dist", "node_modules", "static"],
+  "exclude": ["dist", "node_modules", "static", "tests/coverage", "tests/e2e"],
   "extension": [".ts", ".tsx"]
 }

@@ -3,7 +3,7 @@ const { defaults } = require('jest-config');
 module.exports = {
   collectCoverage: true,
   collectCoverageFrom: ['**/*.{ts,tsx}'],
-  coverageDirectory: 'coverage',
+  coverageDirectory: 'tests/coverage',
   globals: {
     'ts-jest': {
       babelConfig: '.babelrc.json',
@@ -13,12 +13,13 @@ module.exports = {
   },
   moduleFileExtensions: [...defaults.moduleFileExtensions, 'ts', 'tsx'],
   moduleNameMapper: {
-    '^.+\\.scss$': '<rootDir>/test/unit/jest.style.mock.js',
+    '^.+\\.scss$': '<rootDir>/tests/unit/jest/jest.mock.scss.js',
     '^@/(.*)$': '<rootDir>/$1'
   },
+  modulePathIgnorePatterns: [...defaults.modulePathIgnorePatterns, 'tests/e2e'],
   preset: 'ts-jest',
-  setupFiles: ['<rootDir>/test/unit/jest.setup.js'],
-  snapshotResolver: '<rootDir>/test/unit/jest.snapshot.resolver.js',
+  setupFiles: ['<rootDir>/tests/unit/jest/jest.setup.js'],
+  snapshotResolver: '<rootDir>/tests/unit/jest/jest.snapshot.resolver.js',
   testEnvironment: 'node',
   testRegex: '((\\.|/)(spec|test))\\.(ts|tsx?)$',
   transform: {
