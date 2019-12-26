@@ -81,11 +81,12 @@ $ npm run test:update
 * [Git documentation][git]
 * [Jest documentation][jest] + [TypeScript support][jest-ts]
 * [JSConfig documentation][jsconfig]
-* [Nuxt.js documentation][nuxt-js] + [TypeScript support][nuxt-ts]
 * [Nuxt environment variables][nuxt-env]
+* [Nuxt.js documentation][nuxt-js] + [TypeScript support][nuxt-ts]
 * [Prettier documentation][prettier]
 * [Sass documentation][sass-lang]
 * [Stylelint developer guide][stylelint-docs]
+* [TS-Node documentation][ts-node]
 * [TypeScript documentation][typescript]
 * [Vue documentation][vue-js]
 * [Vue TypeScript documentation][vue-ts]
@@ -114,6 +115,7 @@ $ npm run test:update
 [screenshot]: static/screenshot.png
 [stylelint-docs]: https://stylelint.io/developer-guide
 [stylelint]: https://stylelint.io/
+[ts-node]: https://github.com/TypeStrong/ts-node
 [typescript]: https://www.typescriptlang.org/
 [vue-js]: https://vuejs.org/
 [vue-ts]: https://vuejs.org/v2/guide/typescript.html

@@ -1,5 +1,5 @@
 import Vue, { VNode } from 'vue';
-import Logo from '@/components/Logo/Logo';
+import Logo from '@/components/Logo';
 import './index.scss';
 
 export default Vue.extend({
