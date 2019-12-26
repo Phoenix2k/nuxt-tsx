@@ -1,14 +1,17 @@
 # Nuxt TSX
 
+![Workflow status][workflow-status]
+
 ![Nuxt.js build with TypeScript and TSX support][screenshot]
 
 For detailed explanation on how things work, check out [Nuxt.js docs][nuxt-js]. To learn more about the TypeScript build, visit [Nuxt TypeScript][nuxt-ts].
 
 ## Build
-* [Nuxt.js][nuxt-js]
 * [Cypress][cypress]
 * [ESLint][eslint]
+* [GitHub workflow][github-workflow]
 * [Jest][jest]
+* [Nuxt.js][nuxt-js]
 * [Prettier][prettier]
 * [SCSS][sass-lang]
 * [Stylelint][stylelint]
@@ -92,7 +95,7 @@ $ npm run test:update
 * [Vue TypeScript documentation][vue-ts]
 
 ## License
-[![MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
+[![MIT](mit-badge)](LICENSE.md)
 
 [awesome-nuxt]: https://github.com/nuxt-community/awesome-nuxt
 [babel]: https://babeljs.io/
@@ -103,9 +106,11 @@ $ npm run test:update
 [eslint-ts]: https://typescript.nuxtjs.org/guide/lint.html
 [eslint]: https://eslint.org/
 [git]: https://git-scm.com/
+[github-workflow]: https://help.github.com/en/actions/automating-your-workflow-with-github-actions/configuring-a-workflow
 [jest-ts]: https://kulshekhar.github.io/ts-jest/
 [jest]: https://jestjs.io/
 [jsconfig]: https://code.visualstudio.com/docs/languages/jsconfig
+[mit-badge]: https://img.shields.io/badge/license-MIT-green.svg
 [node]: https://nodejs.org/
 [nuxt-env]: https://nuxtjs.org/api/configuration-env/
 [nuxt-js]: https://nuxtjs.org/
@@ -119,3 +124,4 @@ $ npm run test:update
 [typescript]: https://www.typescriptlang.org/
 [vue-js]: https://vuejs.org/
 [vue-ts]: https://vuejs.org/v2/guide/typescript.html
+[workflow-status]: https://github.com/Phoenix2k/nuxt-tsx/workflows/Nuxt.tsx%20workflow/badge.svg

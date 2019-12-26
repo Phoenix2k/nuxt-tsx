@@ -1,8 +1,16 @@
-# Introduction
-
 ![Nuxt.js build with TypeScript and TSX support][screenshot]
 
+<center>
+
+![Workflow status][workflow-status]
+
+</center>
+
+# Introduction
+
+::: tip Background reading
 For detailed explanation on how things work, check out [Nuxt.js docs][nuxt-js]. To learn more about the TypeScript build, visit [Nuxt TypeScript][nuxt-ts].
+:::
 
 ## Build
 * [Nuxt.js][nuxt-js]
@@ -38,7 +46,7 @@ $ npm install
 This will automatically create an `.env` file in the project root where you can set your [Nuxt environment variables][nuxt-env].
 
 ## License
-[![MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
+[![MIT](mit-badge)](LICENSE.md)
 
 [cypress]: https://www.cypress.io/
 [editor-config]: https://editorconfig.org/
@@ -46,6 +54,7 @@ This will automatically create an `.env` file in the project root where you can 
 [eslint]: https://eslint.org/
 [git]: https://git-scm.com/
 [jest]: https://jestjs.io/
+[mit-badge]: https://img.shields.io/badge/license-MIT-green.svg
 [node-js]: https://nodejs.org/
 [nuxt-env]: https://nuxtjs.org/api/configuration-env/
 [nuxt-js]: https://nuxtjs.org/
@@ -57,3 +66,4 @@ This will automatically create an `.env` file in the project root where you can 
 [typescript]: https://www.typescriptlang.org/
 [vue-js]: https://vuejs.org/
 [vuepress]: https://vuepress.vuejs.org/
+[workflow-status]: https://github.com/Phoenix2k/nuxt-tsx/workflows/Nuxt.tsx%20workflow/badge.svg
