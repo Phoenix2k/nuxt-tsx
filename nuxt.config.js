@@ -16,6 +16,9 @@ export default {
     }
   },
   buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/stylelint-module', '@nuxt/typescript-build'],
+  env: {
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+  },
   head: {
     link: [
       {
