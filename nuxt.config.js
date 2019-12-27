@@ -46,6 +46,26 @@ export default {
   loading: {
     color: '#0C0'
   },
+  manifest: {
+    background_color: '#fff',
+    description: 'Nuxt.js build with TypeScript and TSX support',
+    display: 'standalone',
+    icons: [
+      {
+        sizes: '32x32',
+        src: 'favicon.ico',
+        type: 'image/x-icon'
+      },
+      {
+        sizes: '512x512',
+        src: 'logo.png',
+        type: 'image/png'
+      }
+    ],
+    name: 'Nuxt.tsx',
+    short_name: 'NuxtTSX',
+    start_url: '.'
+  },
   mode: 'universal',
   modules: ['@nuxtjs/axios', '@nuxtjs/dotenv', '@nuxtjs/pwa'],
   stylelint: {
