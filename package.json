@@ -68,6 +68,7 @@
     "cypress:run": "cypress run --config-file .cypress.json",
     "dev": "nuxt",
     "docs:dev": "vuepress dev docs",
+    "docs:deploy": "./scripts/deploy-docs.sh",
     "docs:build": "vuepress build docs",
     "generate": "nuxt generate",
     "lint:fix": "eslint --ext .js,.json,.ts,.tsx --fix --ignore-path .gitignore .",
