@@ -10,12 +10,16 @@ import path from 'path';
  * @param {string} destination Destination file
  * @return {void}
  */
-const copyFile = (source: string, destination: string): void => {
+export const copyFile = (source: string, destination: string): NodeJS.ErrnoException | void => {
   const sourceFile = path.join(__dirname, source);
   const destinationFile = path.join(__dirname, destination);
-  fs.copyFile(sourceFile, destinationFile, (error) => {
-    if (error) throw error;
-  });
+  return fs.copyFile(
+    sourceFile,
+    destinationFile,
+    (error: NodeJS.ErrnoException | null): NodeJS.ErrnoException | void => {
+      if (error) throw error;
+    }
+  );
 };
 
 export default copyFile;
