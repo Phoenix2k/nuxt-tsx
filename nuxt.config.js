@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 export default {
   build: {
     extend(config, ctx) {
@@ -15,7 +17,12 @@ export default {
       }
     }
   },
-  buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/stylelint-module', '@nuxt/typescript-build'],
+  buildModules: [
+    ['@nuxtjs/dotenv', { filename: '.env' }],
+    '@nuxt/typescript-build',
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/stylelint-module'
+  ],
   env: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000'
   },
@@ -41,7 +48,7 @@ export default {
         name: 'description'
       }
     ],
-    title: process.env.npm_package_name || ''
+    title: process.env.name || ''
   },
   loading: {
     color: '#0C0'
@@ -67,7 +74,7 @@ export default {
     start_url: '.'
   },
   mode: 'universal',
-  modules: ['@nuxtjs/axios', '@nuxtjs/dotenv', '@nuxtjs/pwa'],
+  modules: ['@nuxtjs/axios', '@nuxtjs/pwa'],
   stylelint: {
     configFile: './.stylelintrc.json',
     emitError: true,

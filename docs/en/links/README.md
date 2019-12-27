@@ -23,6 +23,7 @@
 ## Nuxt.js
 * [Directory structure][nuxt-folders]
 * [Documentation][nuxt-js]
+* [Dotenv module][nuxt-dotenv]
 * [Environment variables][nuxt-env]
 * [Nuxt PWA][nuxt-pwa]
 * [TypeScript build][nuxt-ts]
@@ -47,6 +48,7 @@
 [jest]: https://jestjs.io/
 [jsconfig]: https://code.visualstudio.com/docs/languages/jsconfig
 [node-js]: https://nodejs.org/
+[nuxt-dotenv]: https://github.com/nuxt-community/dotenv-module
 [nuxt-env]: https://nuxtjs.org/api/configuration-env/
 [nuxt-folders]: https://nuxtjs.org/guide/directory-structure/
 [nuxt-js]: https://nuxtjs.org/
