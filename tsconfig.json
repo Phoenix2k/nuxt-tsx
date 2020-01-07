@@ -6,7 +6,7 @@
     "experimentalDecorators": false,
     "jsx": "preserve",
     "lib": ["dom", "esnext", "esnext.asynciterable"],
-    "module": "commonjs",
+    "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,
     "paths": {
@@ -15,7 +15,7 @@
     "removeComments": true,
     "sourceMap": true,
     "strict": true,
-    "target": "es2018",
+    "target": "esnext",
     "types": ["@nuxt/types", "node"]
   },
   "exclude": ["dist", "node_modules", "static", "tests/coverage", "tests/e2e"],
