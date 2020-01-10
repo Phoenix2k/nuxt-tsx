@@ -1,5 +1,5 @@
 #!/bin/sh
-if [ -f .env ]
+if [ ! -f .env ]
 then
     cp .env.example .env
     echo "✅ Environment file created\n"
