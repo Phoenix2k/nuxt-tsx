@@ -1,6 +1,6 @@
 # Nuxt TSX
 
-![Workflow status][workflow-status]
+![Work in progress][wip-badge] ![Workflow status][workflow-status]
 
 ![Nuxt.js build with TypeScript and TSX support][screenshot]
 
@@ -124,4 +124,5 @@ $ npm run test:update
 [typescript]: https://www.typescriptlang.org/
 [vue-js]: https://vuejs.org/
 [vue-ts]: https://vuejs.org/v2/guide/typescript.html
+[wip-badge]: https://img.shields.io/badge/WIP-Work%20in%20progress-yellow
 [workflow-status]: https://github.com/Phoenix2k/nuxt-tsx/workflows/Nuxt.tsx%20workflow/badge.svg
