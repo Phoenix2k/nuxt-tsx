@@ -61,7 +61,7 @@ This will automatically create an `.env` file in the project root where you can 
 [nuxt-ts]: https://typescript.nuxtjs.org/
 [prettier]: https://prettier.io/
 [sass-lang]: https://sass-lang.com/
-[screenshot]: /screenshot.png
+[screenshot]: /nuxt-tsx/screenshot.png
 [stylelint]: https://stylelint.io/
 [typescript]: https://www.typescriptlang.org/
 [vue-js]: https://vuejs.org/
