@@ -21,9 +21,9 @@ module.exports = {
   setupFiles: ['<rootDir>/tests/unit/jest/jest.setup.js'],
   snapshotResolver: '<rootDir>/tests/unit/jest/jest.snapshot.resolver.js',
   testEnvironment: 'node',
-  testRegex: '((\\.|/)(spec|test))\\.(ts|tsx?)$',
+  testRegex: '((\\.|/)test)\\.(ts|tsx?)$',
   transform: {
-    '^.+\\.ts(x)$': 'ts-jest'
+    '^.+\\.(ts|tsx?)$': 'ts-jest'
   },
   verbose: true
 };
