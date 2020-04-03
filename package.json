@@ -56,10 +56,10 @@
       "pre-push": "npm run test:ci"
     }
   },
-  "lint-staged": {
-    "*.{js,json,ts,tsx}": "npm run lint"
-  },
   "license": "MIT",
+  "lint-staged": {
+    "*.{js,json,ts,tsx}": "npm run lint:fix"
+  },
   "name": "nuxt-tsx",
   "private": true,
   "resolutions": {
@@ -70,19 +70,23 @@
     "cypress:ci": "CYPRESS_CI=true cypress run --config-file .cypress.json --config video=false",
     "cypress:run": "cypress run --config-file .cypress.json",
     "dev": "nuxt",
-    "docs:dev": "vuepress dev docs",
-    "docs:deploy": "./scripts/deploy-docs.sh",
     "docs:build": "vuepress build docs",
+    "docs:deploy": "./scripts/deploy-docs.sh",
+    "docs:dev": "vuepress dev docs",
     "generate": "nuxt generate",
-    "lint:fix": "eslint --ext .js,.json,.ts,.tsx --fix --ignore-path .gitignore .",
-    "lint": "eslint --ext .js,.json,.ts,.tsx --ignore-path .gitignore .",
+    "lint:css": "stylelint --ignore-path .gitignore '**/*.scss'",
+    "lint:fix:css": "stylelint --ignore-path .gitignore --fix '**/*.scss'",
+    "lint:fix:source": "eslint --ext .js,.json,.ts,.tsx --fix --ignore-path .gitignore .",
+    "lint:fix": "npm run lint:fix:css && npm run lint:fix:source",
+    "lint:source": "eslint --ext .js,.json,.ts,.tsx --ignore-path .gitignore .",
+    "lint": "npm lint:css && npm run lint:source",
     "postinstall": "scripts/postinstall.sh",
     "start": "nuxt start",
     "test:ci": "jest && nuxt generate && start-test start 3000 cypress:ci",
     "test:e2e": "nuxt generate && start-test start 3000 cypress:run",
+    "test": "npm run test:unit && npm run test:e2e",
     "test:unit": "jest --coverage",
-    "test:update": "npm run test:unit -- -u",
-    "test": "npm run test:unit && npm run test:e2e"
+    "test:update": "npm run test:unit -- -u"
   },
   "version": "1.0.2"
 }
