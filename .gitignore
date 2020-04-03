@@ -16,6 +16,7 @@ tests/e2e/cypress/videos/*.mp4
 !.github
 !.gitignore
 !.gitkeep
+!.huskyrc.json
 !.prettierrc.json
 !.stylelintrc.json
 !.vuepress

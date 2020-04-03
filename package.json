@@ -51,12 +51,6 @@
     "node": "~12.13.0",
     "npm": "~6.14.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "npm run test:ci"
-    }
-  },
   "license": "MIT",
   "lint-staged": {
     "*.{js,json,ts,tsx}": "npm run lint:fix"
