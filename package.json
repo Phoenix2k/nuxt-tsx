@@ -79,7 +79,7 @@
     "lint:fix:source": "eslint --ext .js,.json,.ts,.tsx --fix --ignore-path .gitignore .",
     "lint:fix": "npm run lint:fix:css && npm run lint:fix:source",
     "lint:source": "eslint --ext .js,.json,.ts,.tsx --ignore-path .gitignore .",
-    "lint": "npm lint:css && npm run lint:source",
+    "lint": "npm run lint:css && npm run lint:source",
     "postinstall": "scripts/postinstall.sh",
     "start": "nuxt start",
     "test:ci": "jest && nuxt generate && start-test start 3000 cypress:ci",
