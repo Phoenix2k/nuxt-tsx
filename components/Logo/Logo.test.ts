@@ -7,7 +7,7 @@ const wrapper = mount(Logo);
 
 describe('Logo', () => {
   test('is a Vue instance', () => {
-    expect(wrapper.isVueInstance()).toBeTruthy();
+    expect(wrapper).toBeTruthy();
   });
   test('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();

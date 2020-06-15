@@ -13,7 +13,7 @@ const wrapper = mount(IndexPage, options);
 
 describe('Index page', () => {
   test('is a Vue instance', () => {
-    expect(wrapper.isVueInstance()).toBeTruthy();
+    expect(wrapper).toBeTruthy();
   });
   test('renders correctly', () => {
     expect(wrapper.element).toMatchSnapshot();
