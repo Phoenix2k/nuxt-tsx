@@ -1,7 +1,5 @@
-/// <reference types="cypress"/>
-/**
- * About page
- */
+/// <reference types="cypress" />
+
 describe('About page', () => {
   it('Visits the about page', () => {
     cy.visit('/about');

@@ -7,3 +7,5 @@
  */
 import './commands';
 import './screenshots';
+
+export {};

@@ -1,4 +1,5 @@
 /// <reference types="cypress" />
+
 /**
  * Custom TypeScript definitions
  */
@@ -7,6 +8,7 @@ declare namespace Cypress {
     /**
      * Custom command to select DOM element by `itemprop` attribute.
      */
+    /* eslint-disable-next-line */
     itemProp(value: string): Chainable<JQuery<HTMLElement>>;
   }
 }

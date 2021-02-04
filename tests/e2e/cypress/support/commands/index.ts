@@ -1,4 +1,3 @@
-/// <reference types="../index" />
 /**
  * Custom commands
  *

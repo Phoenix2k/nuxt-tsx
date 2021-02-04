@@ -1,14 +1,18 @@
 {
-  "compilerOptions": {
-    "baseUrl": "../../../node_modules",
-    "strict": true,
-    "sourceMap": true,
-    "module": "commonjs",
-    "target": "es5",
-    "lib": ["dom", "es6"],
-    "jsx": "preserve",
-    "experimentalDecorators": true
-  },
   "compileOnSave": false,
-  "types": "cypress"
+  "compilerOptions": {
+    "baseUrl": "../../../",
+    "jsx": "preserve",
+    "lib": ["dom", "es2015", "es6"],
+    "module": "commonjs",
+    "noEmit": false,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es5",
+    "types": ["cypress"],
+    "typeRoots": ["./support"]
+  },
+  "extends": "../../../tsconfig",
+  "exclude": ["node_modules"],
+  "include": ["**/*.ts"]
 }
