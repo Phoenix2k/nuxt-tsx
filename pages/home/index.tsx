@@ -1,8 +1,9 @@
-import Vue, { VNode } from 'vue';
 import Logo from '@/components/Logo';
+import Vue, { VNode } from 'vue';
 import './index.scss';
 
 export default Vue.extend({
+  name: 'Home',
   components: {
     Logo
   },

@@ -1,6 +1,7 @@
 import Vue, { VNode } from 'vue';
 
 export default Vue.extend({
+  name: 'About',
   render(): VNode {
     return (
       <div class="container">
