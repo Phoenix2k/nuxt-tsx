@@ -1,22 +1,7 @@
 require('dotenv').config();
 
 export default {
-  build: {
-    extend(config, ctx) {
-      // Run ESLint on save
-      if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          exclude: /(node_modules)/,
-          loader: 'eslint-loader',
-          options: {
-            fix: true
-          },
-          test: /\.(js|json|ts|tsx)$/
-        });
-      }
-    }
-  },
+  build: {},
   buildModules: [
     ['@nuxtjs/dotenv', { filename: '.env' }],
     '@nuxt/typescript-build',
@@ -73,7 +58,6 @@ export default {
     short_name: 'NuxtTSX',
     start_url: '.'
   },
-  mode: 'universal',
   modules: ['@nuxtjs/axios', '@nuxtjs/pwa'],
   stylelint: {
     configFile: './.stylelintrc.json',
@@ -81,15 +65,5 @@ export default {
     files: ['{assets,components,layouts,pages}/**/*.scss'],
     fix: true
   },
-  typescript: {
-    typeCheck: {
-      eslint: true,
-      eslintOptions: {
-        cache: false,
-        extensions: ['js', 'json', 'ts', 'tsx'],
-        fix: true,
-        outputReport: true
-      }
-    }
-  }
+  target: 'static'
 };
