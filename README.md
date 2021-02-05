@@ -1,6 +1,6 @@
 # Nuxt TSX
 
-![Workflow status][workflow-status]
+[![Workflow status][workflow-status]][workflow-summary]
 
 ![Nuxt.js build with TypeScript and TSX support][screenshot]
 
@@ -95,7 +95,7 @@ $ npm run test:update
 * [Vue TypeScript documentation][vue-ts]
 
 ## License
-[![MIT](mit-badge)](LICENSE.md)
+[![MIT][mit-badge]](LICENSE.md)
 
 [awesome-nuxt]: https://github.com/nuxt-community/awesome-nuxt
 [babel]: https://babeljs.io/
@@ -125,3 +125,4 @@ $ npm run test:update
 [vue-js]: https://vuejs.org/
 [vue-ts]: https://vuejs.org/v2/guide/typescript.html
 [workflow-status]: https://github.com/Phoenix2k/nuxt-tsx/workflows/Nuxt.tsx%20workflow/badge.svg
+[workflow-summary]: https://github.com/Phoenix2k/nuxt-tsx/actions?query=workflow%3A%22Nuxt.tsx+workflow%22
