@@ -1,5 +1,35 @@
 {
   "author": "Niko Pettersen",
+  "babel": {
+    "env": {
+      "test": {
+        "plugins": [
+          [
+            "istanbul",
+            {
+              "exclude": [
+                "**/*.spec.ts*",
+                "**/*.test.ts*"
+              ]
+            }
+          ]
+        ],
+        "presets": [
+          [
+            "@babel/preset-env",
+            {
+              "targets": {
+                "node": "current"
+              }
+            }
+          ]
+        ]
+      }
+    },
+    "presets": [
+      "@vue/app"
+    ]
+  },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.0",
     "@nuxtjs/dotenv": "^1.4.1",
@@ -52,19 +82,112 @@
     "node": "~14.8.0",
     "npm": "~7.52.0"
   },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "cypress/globals": true,
+      "jest/globals": true,
+      "node": true
+    },
+    "extends": [
+      "@nuxtjs",
+      "@nuxtjs/eslint-config-typescript",
+      "plugin:cypress/recommended",
+      "plugin:jest/recommended",
+      "plugin:json/recommended",
+      "plugin:nuxt/recommended",
+      "plugin:prettier/recommended",
+      "prettier",
+      "prettier/vue"
+    ],
+    "ignorePatterns": [
+      "node_modules/"
+    ],
+    "plugins": [
+      "cypress",
+      "jest",
+      "prettier"
+    ],
+    "root": true,
+    "rules": {
+      "cypress/assertion-before-screenshot": "warn",
+      "cypress/no-assigning-return-values": "error",
+      "cypress/no-unnecessary-waiting": "error",
+      "jest/no-disabled-tests": "warn",
+      "jest/no-focused-tests": "error",
+      "jest/no-identical-title": "error",
+      "jest/prefer-to-have-length": "warn",
+      "jest/valid-expect": "error",
+      "no-console": 0
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run test:ci"
+    }
+  },
+  "jest": {
+    "collectCoverage": false,
+    "collectCoverageFrom": [
+      "**/*.{ts,tsx}",
+      "!**/*.d.ts"
+    ],
+    "coverageDirectory": "tests/coverage",
+    "globals": {
+      "ts-jest": {
+        "babelConfig": true,
+        "compiler": "typescript",
+        "tsconfig": "tsconfig.json"
+      }
+    },
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "ts",
+      "tsx"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.scss$": "<rootDir>/tests/unit/jest/jest.mock.scss.js",
+      "^@/(.*)$": "<rootDir>/$1"
+    },
+    "modulePathIgnorePatterns": [
+      "node_modules",
+      "tests/e2e"
+    ],
+    "preset": "ts-jest",
+    "setupFiles": [
+      "<rootDir>/tests/unit/jest/jest.setup.js"
+    ],
+    "snapshotResolver": "<rootDir>/tests/unit/jest/jest.snapshot.resolver.js",
+    "testEnvironment": "node",
+    "testRegex": "((\\.|/)test)\\.(ts|tsx?)$",
+    "transform": {
+      "^.+\\.(ts|tsx?)$": "ts-jest"
+    },
+    "verbose": true
+  },
   "license": "MIT",
   "lint-staged": {
     "*.{js,json,ts,tsx}": "npm run lint:fix"
   },
   "name": "nuxt-tsx",
+  "prettier": {
+    "arrowParens": "always",
+    "printWidth": 100,
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "none"
+  },
   "private": true,
   "resolutions": {
     "minimist": "^1.2.5"
   },
   "scripts": {
     "build": "nuxt build",
-    "cypress:ci": "CYPRESS_CI=true cypress run --config-file .cypress.json --config video=false",
-    "cypress:run": "cypress run --config-file .cypress.json",
+    "cypress:ci": "CYPRESS_CI=true cypress run --config video=false --config-file tests/e2e/cypress/cypress.json",
+    "cypress:run": "cypress run --config-file tests/e2e/cypress/cypress.json",
     "dev": "nuxt",
     "docs:build": "vuepress build docs",
     "docs:deploy": "./scripts/deploy-docs.sh",
@@ -83,6 +206,21 @@
     "test:e2e": "nuxt generate && start-test start 3000 cypress:run",
     "test:unit": "jest --coverage",
     "test:update": "npm run test:unit -- -u"
+  },
+  "stylelint": {
+    "plugins": [
+      "stylelint-order"
+    ],
+    "rules": {
+      "at-rule-no-vendor-prefix": true,
+      "order/order": [
+        "custom-properties",
+        "declarations"
+      ],
+      "order/properties-alphabetical-order": true,
+      "property-no-unknown": true,
+      "property-no-vendor-prefix": null
+    }
   },
   "version": "1.0.2"
 }

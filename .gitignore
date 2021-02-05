@@ -8,19 +8,6 @@ tests/coverage
 tests/e2e/cypress/screenshots/**
 tests/e2e/cypress/videos/*.mp4
 
-# Exceptions
-!.babelrc.json
-!.cypress.json
-!.env.example
-!.eslintrc.json
-!.github
-!.gitignore
-!.gitkeep
-!.huskyrc.json
-!.prettierrc.json
-!.stylelintrc.json
-!.vuepress
-
 # Nuxt generate
 dist
 
@@ -32,3 +19,10 @@ node_modules
 
 # Service worker
 sw.*
+
+# Exceptions
+!.env.example
+!.github
+!.gitignore
+!.gitkeep
+!.vuepress
